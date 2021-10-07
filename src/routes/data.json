@@ -1,0 +1,161 @@
+{
+  "сountries": [
+    {
+      "name": "Россия",
+      "description": "",
+      "сities": [
+        {
+          "name": "Москва",
+          "slug": "Moscow",
+          "text": "Групповые медитации по <b>четвергам в 20:00</b>",
+          "mark": "true",
+          "links": [
+            {
+              "text": "Группа ВК",
+              "url": "http://vk.com",
+              "icon": "vk"
+            }
+          ],
+          "addresses": [
+            {
+              "text": "ул. Тверская, 17",
+              "map": [
+                55.765927,
+                37.617057
+              ],
+              "description": "Арка возле аптеки"
+            }
+          ],
+          "contacts": [
+            {
+              "name": "Антон",
+              "email": "email@mail.ru",
+              "phone": "+79036648393",
+              "messangers": [
+                "tg",
+                "fb",
+                "wa"
+              ],
+              "organizer": "true",
+              "links": [
+                {
+                  "url": "http://fb.com",
+                  "icon": "fb"
+                }
+              ],
+              "description": "Финансовые вопросы"
+            },
+            {
+              "name": "Иван",
+              "email": "email@mail.ru",
+              "phone": "+79036648393",
+              "messangers": [
+                "tg",
+                "fb",
+                "wa"
+              ],
+              "organizer": "false",
+              "links": [
+                {
+                  "text": "@anton",
+                  "url": "http://vk.com",
+                  "icon": "vk"
+                }
+              ],
+              "description": "Финансовые вопросы"
+            }
+          ]
+        },
+        {
+          "name": "Санкт-Питербург",
+          "slug": "sanct-peterburg",
+          "text": "Групповые медитации по <b>четвергам в 20:00</b>",
+          "mark": "false",
+          "links": [
+            {
+              "text": "Группа ВК",
+              "url": "http://vk.com",
+              "icon": "vk"
+            }
+          ],
+          "addresses": [
+            {
+              "text": "ул. Тверская, 17",
+              "map": [
+                55.765927,
+                37.617057
+              ],
+              "description": "Арка возле аптеки"
+            }
+          ],
+          "contacts": [
+            {
+              "name": "Антон",
+              "email": "email@mail.ru",
+              "phone": "+79036648393",
+              "messangers": [
+                "tg",
+                "fb",
+                "wa"
+              ],
+              "organizer": "true",
+              "links": [
+                {
+                  "text": "@anton",
+                  "url": "http://vk.com",
+                  "icon": "vk"
+                }
+              ],
+              "description": "Финансовые вопросы"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Беларусь",
+      "description": "",
+      "сities": [
+        {
+          "name": "Минск",
+          "slug": "minsk",
+          "text": "Групповые медитации по <b>четвергам в 20:00</b>",
+          "mark": "true",
+          "links": [
+            {
+              "text": "Группа ВК",
+              "url": "http://vk.com",
+              "icon": "vk"
+            }
+          ],
+          "addresses": [
+            {
+              "text": "ул. Тверская, 17",
+              "map": [
+                55.765927,
+                37.617057
+              ],
+              "description": "Арка возле аптеки"
+            }
+          ],
+          "contacts": [
+            {
+              "name": "Антон",
+              "email": "email@mail.ru",
+              "phone": "+375296404633",
+              "organizer": "true",
+              "links": [
+                {
+                  "text": "@anton",
+                  "url": "http://vk.com",
+                  "icon": "vk"
+                }
+              ],
+              "description": "Финансовые вопросы"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

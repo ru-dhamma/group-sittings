@@ -1,0 +1,36 @@
+{
+  "name": "group-sittings",
+  "version": "0.0.1",
+  "scripts": {
+    "dev:only": "svelte-kit dev",
+    "build:only": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "tailwind:watch": "cross-env TAILWIND_MODE=watch cross-env NODE_ENV=development postcss src/styles/tailwind.css -o src/styles/tailwind-output.css -w",
+    "tailwind:build": "cross-env TAILWIND_MODE=build cross-env NODE_ENV=production postcss src/styles/tailwind.css -o src/styles/tailwind-output.css",
+    "dev": "concurrently \"yarn run dev:only\" \"yarn run tailwind:watch\"",
+    "build": "yarn run tailwind:build && yarn run build:only"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "next",
+    "autoprefixer": "^10.3.7",
+    "concurrently": "^6.3.0",
+    "cross-env": "^7.0.3",
+    "postcss": "^8.3.9",
+    "postcss-cli": "^9.0.1",
+    "rollup-plugin-svelte": "^7.1.0",
+    "svelte": "^3.43.1",
+    "svelte-accessible-accordion": "^2.0.0",
+    "svelte-preprocess": "^4.9.8",
+    "svelte-search": "^1.1.0",
+    "tailwindcss": "^2.2.16",
+    "svelte-fa": "^2.3.3",
+    "@fontsource/fira-mono": "^4.5.0",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4"
+  },
+  "type": "module",
+  "dependencies": {
+    "@lukeed/uuid": "^2.0.0",
+    "cookie": "^0.4.1"
+  }
+}
