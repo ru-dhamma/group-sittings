@@ -29,6 +29,7 @@
     type == 'email' ? 'mailto:' :
     type == 'tel' ? 'tel:' :
     type == 'map' ? 'http://maps.apple.com/?q=' : '';
+    console.log(messangers);
   let messangersIcons = messangers.map(
     (m) => {
       switch (m) {
@@ -54,7 +55,7 @@
     {url}
   </slot>
   {#if type == 'tel'}
-    {#if messangersIcons.length > 0}
+    {#if messangersIcons}
     {#each messangersIcons as messangerIcon}
       <Fa icon={messangerIcon} class="inline text-gray-500" />
     {/each}

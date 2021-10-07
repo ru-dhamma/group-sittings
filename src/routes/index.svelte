@@ -19,7 +19,7 @@
 
 	function findCities(countries, searchTerm) {
 		return countries.reduce(function (res, country) {
-			if (country.сities.some(({ name }) => name.toLowerCase().includes(searchTerm.toLowerCase()))) {
+			if (typeof country.сities != 'undefined' && country.сities.some(({ name }) => name.toLowerCase().includes(searchTerm.toLowerCase()))) {
 				let filtered = {
 					name: country.name,
 					description: country.description,
@@ -31,10 +31,10 @@
 		}, [])
 	}
 	
-	$: found = findCities(countries, searchTerm);
+	export let countries;
+	$: found = searchTerm != "" ? findCities(countries, searchTerm) : countries;
 	$: isSearching = searchTerm != "" ? true : false;
 
-	export let countries;
 </script>
 
 
@@ -46,11 +46,14 @@
 		{#each found as country, i}
 
 		<AccordionItem expanded='{i===0 || isSearching}' title="{country.name}">
+		{#if country.description}{@html country.description}{/if}
+		{#if country.сities}
 		<ul>
 			{#each country.сities as city}
 				<li><a href="/{city.slug}">{city.name}</a></li>
 			{/each}
 		</ul>
+		{/if}
 	</AccordionItem>
 	{/each}
 </Accordion>

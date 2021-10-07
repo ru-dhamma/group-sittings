@@ -5,13 +5,12 @@ export function get({params}) {
   let countries = data.сountries;
   let city;
   for (let country of countries) {
-  
+    if (typeof country.сities != 'undefined')
     city = country.сities.find(function(_city, index) {
       if (_city.slug == slug) return true;
     });
     if (typeof(city) != 'undefined') break;
   }
-  
   return {
     body: city,
   };
