@@ -14,6 +14,13 @@
 <script>
 	import { Accordion, AccordionItem } from "svelte-accessible-accordion";
 	import Search from "svelte-search";
+	import Fa from 'svelte-fa/src/fa.svelte';
+  import {
+    faSearchLocation,
+		faPlusCircle,
+		faStar,
+faCity
+  } from '@fortawesome/free-solid-svg-icons';
 
   let searchTerm = "";
 
@@ -40,17 +47,23 @@
 
 <section>
 	
-	<Search bind:value = {searchTerm} label="" placeholder="Поиск по городам" autofocus hideLabel="false" />
+	<div class="search-wrap relative">
+		<div class="absolute inset-y-0 left-0 pl-3  flex items-center  pointer-events-none">
+			<Fa icon={faSearchLocation} class="text-gray-300 text-2xl" />
+		</div>
+		<Search bind:value = {searchTerm} label="" placeholder="Поиск по городам" hideLabel="false" class="appearance-none border rounded-full w-full py-3 pl-12 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow" />
+	</div>
 	
-	<Accordion>
+	<Accordion class="divide-y divide-gray-200">
 		{#each found as country, i}
 
-		<AccordionItem expanded='{i===0 || isSearching}' title="{country.name}">
-		{#if country.description}{@html country.description}{/if}
+		<AccordionItem expanded='{i===0 || isSearching}' class=""  >
+			<h3 slot="title"><Fa icon={faPlusCircle} class="inline mr-5" />{country.name}</h3>
+		{#if country.description}<div class="mb-7 description">{@html country.description}</div>{/if}
 		{#if country.сities}
-		<ul>
+		<ul class="cities-list mb-7">
 			{#each country.сities as city}
-				<li><a href="/{city.slug}">{city.name}</a></li>
+				<li class="city py-0.5"><a href="/{city.slug}" class="hover:underline">{#if city.mark}<Fa icon={faStar} class="inline text-gray-300" />{/if}{city.name}</a></li>
 			{/each}
 		</ul>
 		{/if}
@@ -64,7 +77,7 @@
 <style>
 	:global([data-accordion-item] [role="region"]) {
 		overflow: hidden;
-		padding:0 1rem;
+		padding:0 0 0 2.55rem;
 		max-height: 100vh;
 		transition:
     	max-height .4s ease,
@@ -75,6 +88,30 @@
 		display: block;
 		max-height: 0px;
   	opacity: 0;
+	}
+	:global([data-accordion-item] .fa) {
+		transition: transform .5s ease;
+	}
+	:global([data-accordion-item] button) {
+		display: block;
+    width: 100%;
+    text-align: left;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+	}
+	:global([data-accordion-item] [aria-expanded="true"] .fa) {
+		transform: rotate(45deg);
+	}
+	.cities-list {
+		columns: 2;
+	}
+	.city {
+		position: relative;
+	}
+	:global(.city .fa) {
+		position: absolute;
+		left: -25px;
+		top: 5px;
 	}
 	:global([data-svelte-search] input)::-webkit-search-cancel-button {
   -webkit-appearance: none;
