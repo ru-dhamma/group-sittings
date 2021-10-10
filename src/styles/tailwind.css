@@ -12,7 +12,13 @@
   h3 {
     @apply text-xl;
   }
+  a {
+    color: #955746;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 #main-container {
-  height: 40rem;
+  min-height: 40rem;
 }

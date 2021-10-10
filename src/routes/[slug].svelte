@@ -19,7 +19,7 @@
 </script>
 
 <script>
-  import Link from '$lib/components/base/link.svelte'
+  import Link from '$lib/components/base/Link.svelte'
   import Fa from 'svelte-fa/src/fa.svelte';
   import {
     faMapMarkerAlt,
@@ -54,7 +54,7 @@
 </svelte:head>
 
 <header class="mb-7">
-  <a class="button bg-gray-100 p-2.5 pr-3.5 rounded-full hover:bg-gray-300 inline-block mb-4 md:absolute" href="/"><span class="rounded-full inline-block bg-yellow-400 w-6 h-6 pl-1.5 pt-0.25 mr-1"><Fa icon={faChevronLeft} class="inline" /></span> Назад</a>
+  <a class="button text-black hover:no-underline bg-gray-100 p-2.5 pr-3.5 rounded-full hover:bg-gray-300 inline-block mb-4 md:absolute" href="/"><span class="rounded-full inline-block bg-yellow-400 w-6 h-6 pl-1.5 pt-0.25 mr-1"><Fa icon={faChevronLeft} class="inline" /></span> Назад</a>
   <h1  id="city-title" class="text-center">{city.name}</h1>
 </header>
 {#if city.text}<p id="city-text" class="mb-3">{@html city.text}</p>{/if}
@@ -98,7 +98,7 @@
     </div>
     <div class="col-span-4">
       {#if contact.phone}<div class="">
-        <Link type="tel" url={contact.phone} messangers={contact.messangers}>{formatPhoneNumber(contact.phone)}</Link>
+        <Link type="tel" url={contact.phone} messengers={contact.messengers}>{formatPhoneNumber(contact.phone)}</Link>
         {#if contact.description}<p>{contact.description}</p>{/if}
       </div>{/if}
       {#if contact.email}<div class=""><Link type="email" url={contact.email}>{contact.email}</Link></div>{/if}
@@ -117,9 +117,3 @@
 </div>
 {/if}
 
-<style>
-  .fa {
-    font-size: 1rem;
-    margin-right: 0.4rem;
-  }
-</style>

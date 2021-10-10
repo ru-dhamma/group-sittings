@@ -43,7 +43,7 @@
             {
               "name": "Ярослав ",
               "phone": "+79127683555",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -64,7 +64,7 @@
             {
               "name": "Вячеслав",
               "phone": "+79035676109",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -72,7 +72,7 @@
             {
               "name": "Александр",
               "phone": "+79033135221",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -80,7 +80,7 @@
             {
               "name": "Антонина",
               "phone": "+79172791446",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -89,7 +89,7 @@
               "name": "Аида",
               "phone": "+79196801010",
               "description": "Финансовые вопросы",
-              "messangers": [
+              "messengers": [
                 "wa"
               ]
             }
@@ -113,7 +113,7 @@
               "name": "Александр",
               "phone": "+79062315095",
               "organizer": "true",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -144,7 +144,7 @@
               "name": "Антон",
               "email": "antixmedik@gmail.com",
               "phone": "+79618564565",
-              "messangers": [
+              "messengers": [
                 "wa"
               ]
             }
@@ -169,7 +169,7 @@
               "name": "Эмиль",
               "phone": "+79036648393",
               "organizer": "true",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -209,7 +209,7 @@
                   "icon": "vk"
                 }
               ],
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -224,7 +224,7 @@
                   "icon": "vk"
                 }
               ],
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -247,7 +247,7 @@
               "name": "Павел",
               "email": "pavel-aira@yandex.ru",
               "phone": "+79537912802",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -279,7 +279,7 @@
             {
               "name": "Надежда Павлюшина",
               "phone": "+79004844224",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -311,7 +311,7 @@
             {
               "name": "Никита",
               "phone": "+79194809913",
-              "messangers": [
+              "messengers": [
                 "tg"
               ]
             }
@@ -349,7 +349,7 @@
                   "icon": "vk"
                 }
               ],
-              "messangers": [
+              "messengers": [
                 "wa"
               ]
             }
@@ -385,7 +385,7 @@
             {
               "name": "Владислав",
               "phone": "+79999939016",
-              "messangers": [
+              "messengers": [
                 "wa",
                 "tg"
               ]
@@ -408,7 +408,7 @@
             {
               "name": "Марина",
               "phone": "+79044628969",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -416,14 +416,14 @@
             {
               "name": "Нелли",
               "phone": "+79129268733",
-              "messangers": [
+              "messengers": [
                 "wa"
               ]
             },
             {
               "name": "Люция",
               "phone": "+79088761118",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -431,7 +431,7 @@
             {
               "name": "Влад",
               "phone": "+79068277217",
-              "messangers": []
+              "messengers": []
             }
           ]
         },
@@ -453,7 +453,7 @@
             {
               "name": "Павел",
               "phone": "+79242286777",
-              "messangers": [
+              "messengers": [
                 "wa",
                 "tg"
               ]
@@ -486,7 +486,7 @@
               "name": "Василий",
               "email": "ulun@list.ru",
               "phone": "+79170675324",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -494,7 +494,7 @@
             {
               "name": "Ольга",
               "phone": "+79176616524",
-              "messangers": [
+              "messengers": [
                 "tg",
                 "wa"
               ]
@@ -525,7 +525,7 @@
             {
               "name": "Андрей",
               "phone": "+375296409633",
-              "messangers": [
+              "messengers": [
                 "wa"
               ]
             },
@@ -533,7 +533,7 @@
               "name": "Диана",
               "email": "vipassana.minsk@gmail.com",
               "phone": "+375296404633",
-              "messangers": [
+              "messengers": [
                 "wa"
               ]
             }

@@ -17,19 +17,20 @@
 
   export let type;
   export let url;
-  export let messangers = [];
-  let preIcon =
-    type == 'email' ? faEnvelope :
-    type == 'tel' ? faPhone :
-    type == 'vk' ? faVk :
-    type == 'fb' ? faFacebook :
-    type == 'in' ? faInstagram :
-    '';
-  let prefix =
-    type == 'email' ? 'mailto:' :
-    type == 'tel' ? 'tel:' :
-    type == 'map' ? 'http://maps.apple.com/?q=' : '';
-  let messangersIcons = messangers.map(
+  export let messengers = [];
+  let preIcon = {
+      email: faEnvelope,
+      tel: faPhone,
+      vk: faVk,
+      fb: faFacebook,
+      in: faInstagram,
+    }[type] ?? '';
+  let prefix = {
+      email: 'mailto:',
+      tel: 'tel:',
+      map: 'http://maps.apple.com/?q='
+    }[type] ?? '';
+  let messengersIcons = messengers.map(
     (m) => {
       switch (m) {
         case "tg":
@@ -59,10 +60,10 @@
   </slot>
 </a>
 {#if type == 'tel'}
-  {#if messangersIcons}
+  {#if messengersIcons}
 <span class="ml-1">    
-  {#each messangersIcons as messangerIcon}
-    <Fa icon={messangerIcon} class="inline text-gray-400" />
+  {#each messengersIcons as messengerIcon}
+    <Fa icon={messengerIcon} class="inline text-gray-400" />
   {/each}
 </span>
   {/if}
@@ -73,9 +74,5 @@
   :global(.fa) {
     font-size: 1rem;
     margin-right: 0.4rem;
-  }
-  a {
-    color: #955746;
-    text-decoration: underline;
   }
 </style>
