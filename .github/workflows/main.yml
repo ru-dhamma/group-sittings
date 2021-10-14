@@ -23,4 +23,5 @@ jobs:
       with:
         server: code.dhamma-dullabha.org
         username: code
+        server-dir: group-sittings/
         password: ${{ secrets.password }}
