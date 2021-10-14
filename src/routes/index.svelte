@@ -1,75 +1,97 @@
 <script context="module">
-	import { base } from '$app/paths';
-	export async function load({ fetch }) {
-    const countries = await fetch(`${base}/index.json`)
-        .then((r) => r.json());
-				
-    return {
-      props: { countries }
-    }
-  }
-	
+	import {
+		base
+	} from '$app/paths';
+	export async function load({
+		fetch
+	}) {
+		const countries = await fetch(`${base}/index.json`)
+			.then((r) => r.json());
+
+		return {
+			props: {
+				countries
+			}
+		}
+	}
 </script>
 
 <script>
-	import { Accordion, AccordionItem } from "svelte-accessible-accordion";
+	import {
+		Accordion,
+		AccordionItem
+	} from "svelte-accessible-accordion";
 	import Search from "svelte-search";
 	import Fa from 'svelte-fa/src/fa.svelte';
-  import {
-    faSearchLocation,
+	import {
+		faSearchLocation,
 		faPlusCircle,
-		faStar,
-faCity
-  } from '@fortawesome/free-solid-svg-icons';
+	} from '@fortawesome/free-solid-svg-icons';
+	import Country from '$lib/components/base/Country.svelte';
 
-  let searchTerm = "";
+	
+	
+	export let countries;
+	let searchTerm = "";
+	let expanded = Array(countries.length).fill(true, 0, 1).fill(false, 1);
+	let isSearching = false;
+	let found = [];
+	
+	$: {
+		found = searchTerm != "" ? findCities(countries, searchTerm) : countries;
+		isSearching = searchTerm != "" ? true : false;
+	}
 
 	function findCities(countries, searchTerm) {
 		return countries.reduce(function (res, country) {
-			if (typeof country.сities != 'undefined' && country.сities.some(({ name }) => name.toLowerCase().includes(searchTerm.toLowerCase()))) {
+			if (typeof country.сities != 'undefined' && country.сities.some(({
+					name
+				}) => name.toLowerCase().includes(searchTerm.toLowerCase()))) {
 				let filtered = {
 					name: country.name,
 					description: country.description,
-					сities: country.сities.filter(({ name }) => name.toLowerCase().includes(searchTerm.toLowerCase()))
+					сities: country.сities.filter(({
+						name
+					}) => name.toLowerCase().includes(searchTerm.toLowerCase()))
 				}
 				res.push(filtered)
 			}
 			return res
 		}, [])
 	}
-	
-	export let countries;
-	$: found = searchTerm != "" ? findCities(countries, searchTerm) : countries;
-	$: isSearching = searchTerm != "" ? true : false;
-
 </script>
 
 
 <section>
-	
+
 	<div class="search-wrap relative">
 		<div class="absolute inset-y-0 left-0 pl-3  flex items-center  pointer-events-none">
 			<Fa icon={faSearchLocation} class="text-gray-300 text-2xl" />
 		</div>
-		<Search bind:value = {searchTerm} label="" placeholder="Поиск по городам" hideLabel="false" class="appearance-none border rounded-full w-full py-3 pl-12 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow" />
+		<Search bind:value={searchTerm} label="" placeholder="Поиск по городам" hideLabel="false"
+			class="appearance-none border rounded-full w-full py-3 pl-12 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow" />
 	</div>
-	
+
+	{#if isSearching}
+	<ul class="found-list divide-y divide-gray-200">
+		{#each found as country, i}
+		<li>
+		<h3>{country.name}</h3>
+			<Country country={country} />
+		</li>
+		{/each}
+	</ul>
+	{:else}
 	<Accordion class="divide-y divide-gray-200">
 		{#each found as country, i}
 
-		<AccordionItem expanded='{i===0 || isSearching}' class=""  >
+		<AccordionItem expanded={expanded[i]} class=""  >
 			<h3 slot="title"><Fa icon={faPlusCircle} class="inline mr-5" />{country.name}</h3>
-		{#if country.description}<div class="mb-7 description">{@html country.description}</div>{/if}
-		{#if country.сities}
-		<ul class="cities-list mb-7">
-			{#each country.сities as city}
-				<li class="city py-0.5"><a href="/{city.slug}" class="hover:underline">{#if city.mark}<Fa icon={faStar} class="inline text-gray-300" />{/if}{city.name}</a></li>
-			{/each}
-		</ul>
-		{/if}
-	</AccordionItem>
+			<Country country={country} />
+		</AccordionItem>
 	{/each}
-</Accordion>
+	</Accordion>
+{/if}
 
 </section>
 
@@ -102,10 +124,20 @@ faCity
 	:global([data-accordion-item] [aria-expanded="true"] .fa) {
 		transform: rotate(45deg);
 	}
-	.cities-list {
+	.found-list li {
+		padding:0 0 0 2.55rem;
+	}
+	.found-list h3 {
+		display: block;
+    width: 100%;
+    text-align: left;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+	}
+	:global(.cities-list) {
 		columns: 2;
 	}
-	.city {
+	:global(.city) {
 		position: relative;
 	}
 	:global(.city .fa) {

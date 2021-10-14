@@ -75,7 +75,7 @@
 <div id="addresses">
   {#each city.addresses as address}
   <div class="grid grid-cols-5 gap-2 mb-3">
-    <div class="col-span-1"><Fa icon={faMapMarkerAlt} class="inline" />Адрес</div>
+    <div class="col-span-1"><Fa icon={faMapMarkerAlt} class="inline mr-2" />Адрес</div>
     <div class="col-span-4">
       <div class="">{address.text}</div>
       {#if address.map}<div class=""><Link type="map" url={address.map}>Карта</Link></div>{/if}
@@ -93,7 +93,7 @@
 {#each city.contacts as contact}
   <div class="grid grid-cols-5 gap-2 py-4">
     <div class="col-span-1">
-      {#if contact.organizer}<Fa icon={faUserCheck} class="inline" />{/if}{contact.name}
+      {#if contact.organizer}<Fa icon={faUserCheck} class="inline mr-2" />{/if}{contact.name}
       {#if contact.organizer}<p class="text-sm italic">(организатор)</p>{/if}
     </div>
     <div class="col-span-4">

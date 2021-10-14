@@ -53,7 +53,7 @@
       }
     });
 </script>
-{#if preIcon}<Fa icon={preIcon} class="inline text-gray-400" />{/if}
+{#if preIcon}<Fa icon={preIcon} class="inline text-gray-400 mr-1" />{/if}
 <a href="{prefix}{url}">
   <slot>
     {url}
@@ -63,16 +63,10 @@
   {#if messengersIcons}
 <span class="ml-1">    
   {#each messengersIcons as messengerIcon}
-    <Fa icon={messengerIcon} class="inline text-gray-400" />
+    <Fa icon={messengerIcon} class="inline text-gray-400 mr-1" />
   {/each}
 </span>
   {/if}
 {:else if type == 'map'} <Fa icon={faChevronRight} class="inline ml-1 text-gray-400" />
 {/if}
 
-<style>
-  :global(.fa) {
-    font-size: 1rem;
-    margin-right: 0.4rem;
-  }
-</style>

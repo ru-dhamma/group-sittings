@@ -651,6 +651,9 @@ video {
 .mb-3 {
 	margin-bottom: 0.75rem;
 }
+.mr-2 {
+	margin-right: 0.5rem;
+}
 .mb-10 {
 	margin-bottom: 2.5rem;
 }
@@ -767,6 +770,10 @@ video {
 	padding-left: 0.75rem;
 	padding-right: 0.75rem;
 }
+.py-4 {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
 .py-0\.5 {
 	padding-top: 0.125rem;
 	padding-bottom: 0.125rem;
@@ -774,10 +781,6 @@ video {
 .py-0 {
 	padding-top: 0px;
 	padding-bottom: 0px;
-}
-.py-4 {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
 }
 .pl-3 {
 	padding-left: 0.75rem;
@@ -825,17 +828,13 @@ video {
 	--tw-text-opacity: 1;
 	color: rgba(55, 65, 81, var(--tw-text-opacity));
 }
-.text-gray-400 {
-	--tw-text-opacity: 1;
-	color: rgba(156, 163, 175, var(--tw-text-opacity));
-}
 .text-black {
 	--tw-text-opacity: 1;
 	color: rgba(0, 0, 0, var(--tw-text-opacity));
 }
-.drop-shadow {
-	--tw-drop-shadow: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));
-	filter: var(--tw-filter);
+.text-gray-400 {
+	--tw-text-opacity: 1;
+	color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
 .filter {
 	filter: var(--tw-filter);
