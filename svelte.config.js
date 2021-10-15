@@ -6,7 +6,7 @@ const config = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 		paths: {
-			base: '/group-sittings'
+			base: process.env['DEPLOY'] ? '/group-sittings' : ''
 		}, 
 		adapter: adapter()
 	}

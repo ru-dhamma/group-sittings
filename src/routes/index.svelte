@@ -5,7 +5,7 @@
 	export async function load({
 		fetch
 	}) {
-		const countries = await fetch(`${base}/index.json`)
+		const countries = await fetch(`/index.json`)
 			.then((r) => r.json());
 
 		return {

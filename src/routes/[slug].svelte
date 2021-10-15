@@ -7,7 +7,7 @@
     fetch
   }) {
     const slug = page.params.slug;
-    const city = await fetch(`${base}/${slug}.json`)
+    const city = await fetch(`/${slug}.json`)
       .then((r) => r.json());
 
     return {
@@ -54,7 +54,7 @@
 </svelte:head>
 
 <header class="mb-7">
-  <a class="button text-black hover:no-underline bg-gray-100 p-2.5 pr-3.5 rounded-full hover:bg-gray-300 inline-block mb-4 md:absolute" href="/"><span class="rounded-full inline-block bg-yellow-400 w-6 h-6 pl-1.5 pt-0.25 mr-1"><Fa icon={faChevronLeft} class="inline" /></span> Назад</a>
+  <a class="button text-black hover:no-underline bg-gray-100 p-2.5 pr-3.5 rounded-full hover:bg-gray-300 inline-block mb-4 md:absolute" href="{base}/"><span class="rounded-full inline-block bg-yellow-400 w-6 h-6 pl-1.5 pt-0.25 mr-1"><Fa icon={faChevronLeft} class="inline" /></span> Назад</a>
   <h1  id="city-title" class="text-center">{city.name}</h1>
 </header>
 {#if city.text}<p id="city-text" class="mb-3">{@html city.text}</p>{/if}
