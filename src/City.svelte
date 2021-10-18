@@ -1,25 +1,7 @@
-<script context="module">
-  import {
-    base
-  } from '$app/paths';
-  export async function load({
-    page,
-    fetch
-  }) {
-    const slug = page.params.slug;
-    const city = await fetch(`/${slug}.json`)
-      .then((r) => r.json());
-
-    return {
-      props: {
-        city
-      }
-    }
-  }
-</script>
-
 <script>
-  import Link from '$lib/components/base/Link.svelte'
+  import { onDestroy } from 'svelte';
+  import { city as cityStore, isIndex } from './stores.js';
+  import Link from './lib/Link.svelte'
   import Fa from 'svelte-fa/src/fa.svelte';
   import {
     faMapMarkerAlt,
@@ -27,8 +9,18 @@
     faUserCheck,
   } from '@fortawesome/free-solid-svg-icons';
 
-  export let city;
-  export let formatPhoneNumber = (str) => {
+  // emtpy city and back to index
+  let back = () => {
+    cityStore.update(()=>Object())
+    isIndex.update(() => true);
+  }
+
+  //city from store
+  let city; 
+  const unsubscribe = cityStore.subscribe(value => city = value);
+  onDestroy(unsubscribe);
+
+  let formatPhoneNumber = (str) => {
     // Filter only numbers from the input
     let cleaned = ('' + str).replace(/\D/g, '');
     // Check if the input is of correct
@@ -54,8 +46,9 @@
 </svelte:head>
 
 <header class="mb-7">
-  <a class="button text-black hover:no-underline bg-gray-100 p-2.5 pr-3.5 rounded-full hover:bg-gray-300 inline-block mb-4 md:absolute" href="{base}/"><span class="rounded-full inline-block bg-yellow-400 w-6 h-6 pl-1.5 pt-0.25 mr-1"><Fa icon={faChevronLeft} class="inline" /></span> Назад</a>
-  <h1  id="city-title" class="text-center">{city.name}</h1>
+  <!-- svelte-ignore a11y-invalid-attribute -->
+  <a class="button text-black hover:no-underline bg-gray-100 p-2.5 pr-3.5 rounded-full hover:bg-gray-300 inline-block mb-4 md:absolute" href="#" on:click="{back}"><span class="rounded-full inline-block bg-yellow-400 w-6 h-6 pl-1.5 pt-0.25 mr-1"><Fa icon={faChevronLeft} class="inline" /></span> Назад</a>
+  {#if city.name}<h1  id="city-title" class="text-center">{city.name}</h1>{/if}
 </header>
 {#if city.text}<p id="city-text" class="mb-3">{@html city.text}</p>{/if}
 

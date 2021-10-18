@@ -23,6 +23,6 @@ jobs:
       with:
         server: code.dhamma-dullabha.org
         username: code
-        local-dir: build/
+        local-dir: public/
         server-dir: group-sittings/
         password: ${{ secrets.password }}

@@ -1,22 +1,7 @@
-<script context="module">
-	import {
-		base
-	} from '$app/paths';
-	export async function load({
-		fetch
-	}) {
-		const countries = await fetch(`/index.json`)
-			.then((r) => r.json());
-
-		return {
-			props: {
-				countries
-			}
-		}
-	}
-</script>
 
 <script>
+	
+	import data from './data.json';
 	import {
 		Accordion,
 		AccordionItem
@@ -27,11 +12,9 @@
 		faSearchLocation,
 		faPlusCircle,
 	} from '@fortawesome/free-solid-svg-icons';
-	import Country from '$lib/components/base/Country.svelte';
-
+	import Country from './lib/Country.svelte';
 	
-	
-	export let countries;
+	let countries = data.сountries;
 	let searchTerm = "";
 	let expanded = Array(countries.length).fill(true, 0, 1).fill(false, 1);
 	let isSearching = false;
@@ -81,17 +64,17 @@
 		</li>
 		{/each}
 	</ul>
+
 	{:else}
 	<Accordion class="divide-y divide-gray-200">
 		{#each found as country, i}
-
 		<AccordionItem expanded={expanded[i]} class=""  >
 			<h3 slot="title"><Fa icon={faPlusCircle} class="inline mr-5" />{country.name}</h3>
 			<Country country={country} />
 		</AccordionItem>
-	{/each}
+		{/each}
 	</Accordion>
-{/if}
+	{/if}
 
 </section>
 
