@@ -24,7 +24,7 @@
 
 <div class="max-w">
 	<PageTransition refresh={key}>
-		<main id="main-container" class="max-w-full md:shadow-lg md:rounded-lg p-5 md:p-10 mb-10">
+		<main id="main-container" class="max-w-full p-5 sm:p-0">
 			<h2 class="mb-5">
 				Групповые медитации для старых студентов
 			</h2>
@@ -61,6 +61,8 @@
   }
 	}
 	#main-container {
-		min-height: 40rem;
+		height: 620px; 
+		max-height: 620px; 
+		overflow-y: hidden;
 	}
 </style>
