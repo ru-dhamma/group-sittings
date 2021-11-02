@@ -60,6 +60,11 @@
     text-decoration: underline;
   }
 	}
+
+  body {
+	  overflow: hidden;
+  }
+
 	#main-container {
 		height: 620px; 
 		max-height: 620px; 
