@@ -33,6 +33,9 @@
     }
 </script>
 
+<svelte:head>
+    <title>Групповые медитации для старых студентов</title>
+</svelte:head>
 
 <section>
     <div class="search-wrap relative">
