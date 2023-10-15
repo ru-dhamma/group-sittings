@@ -1,27 +1,17 @@
 <script>
-    import {onDestroy} from 'svelte';
     import City from './City.svelte';
     import Index from './Index.svelte';
     import PageTransition from './lib/PageTransition.svelte';
     import {city, isIndex} from './stores.js';
-
-    let key;
-    let isIndexValue;
-
-    const unsubscribeCity = city.subscribe(value => key = typeof value != 'undefined' ? value.name : 'index');
-    const unsubscribeIndex = isIndex.subscribe(value => isIndexValue = value);
-
-    onDestroy(unsubscribeCity);
-    onDestroy(unsubscribeIndex);
 </script>
 
 <div class="max-w">
-    <PageTransition refresh={key}>
+    <PageTransition refresh={$city}>
         <main class="max-w-full p-5 sm:p-0" id="main-container">
             <h2 class="mb-5">
                 Групповые медитации для старых студентов
             </h2>
-            {#if isIndexValue}
+            {#if $isIndex}
                 <Index/>
             {:else}
                 <City/>
