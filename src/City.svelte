@@ -1,6 +1,7 @@
 <script>
     import {faChevronLeft, faMapMarkerAlt, faUserCheck} from '@fortawesome/free-solid-svg-icons';
     import Fa from 'svelte-fa/src/fa.svelte';
+    import createPhoneFormatter from './formatter/phone';
     import Link from './lib/Link.svelte';
     import {city, country, isIndex} from './stores.js';
 
@@ -11,25 +12,7 @@
         isIndex.update(() => true);
     };
 
-    const formatPhoneNumber = (str) => {
-        // Filter only numbers from the input
-        let cleaned = ('' + str).replace(/\D/g, '');
-        // Check if the input is of correct
-        // For russia and kazakhstan
-        let match = cleaned.match(/^(7|8|)?(\d{3})(\d{3})(\d{4})$/);
-        if (match) {
-            let intlCode = (match[1] ? '+7 ' : '');
-            return [intlCode, '(', match[2], ') ', match[3], '-', match[4]].join('');
-        }
-        // For ukrain and belarus
-        match = cleaned.match(/^(380|375|)?(\d{2})(\d{3})(\d{4})$/);
-        if (match) {
-            return ['+', match[1], ' (', match[2], ') ', match[3], '-', match[4]].join('');
-        }
-
-        //if nothing matched return unformatted
-        return str;
-    };
+    const formatPhone = createPhoneFormatter($country);
 </script>
 
 <svelte:head>
@@ -102,7 +85,7 @@
                 <div class="col-span-4">
                     {#if contact.phone}
                         <div class="">
-                            <Link type="tel" url={contact.phone} messengers={contact.messengers}>{formatPhoneNumber(contact.phone)}</Link>
+                            <Link type="tel" url={contact.phone} messengers={contact.messengers}>{formatPhone(contact.phone)}</Link>
                             {#if contact.description}<p>{contact.description}</p>{/if}
                         </div>
                     {/if}
