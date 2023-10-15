@@ -1,6 +1,7 @@
 {
   "name": "group-sittings",
   "version": "0.0.1",
+  "license": "UNLICENSED",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
