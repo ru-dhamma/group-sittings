@@ -1,9 +1,9 @@
 {
-  "сountries": [
+  "countries": [
     {
       "name": "Россия",
       "description": "",
-      "сities": [
+      "cities": [
         {
           "name": "Владивосток",
           "slug": "vladivostok",
@@ -510,7 +510,7 @@
     {
       "name": "Беларусь",
       "description": "",
-      "сities": [
+      "cities": [
         {
           "name": "Минск",
           "slug": "minsk",

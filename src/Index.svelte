@@ -13,8 +13,8 @@
 		faPlusCircle,
 	} from '@fortawesome/free-solid-svg-icons';
 	import Country from './lib/Country.svelte';
-	
-	let countries = data.сountries;
+
+	let countries = data.countries;
 	let searchTerm = "";
 	let expanded = Array(countries.length).fill(true, 0, 1).fill(false, 1);
 	let isSearching = false;
@@ -27,13 +27,13 @@
 
 	function findCities(countries, searchTerm) {
 		return countries.reduce(function (res, country) {
-			if (typeof country.сities != 'undefined' && country.сities.some(({
+			if (typeof country.cities != 'undefined' && country.cities.some(({
 					name
 				}) => name.toLowerCase().includes(searchTerm.toLowerCase()))) {
 				let filtered = {
 					name: country.name,
 					description: country.description,
-					сities: country.сities.filter(({
+					cities: country.cities.filter(({
 						name
 					}) => name.toLowerCase().includes(searchTerm.toLowerCase()))
 				}
