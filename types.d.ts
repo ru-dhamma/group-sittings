@@ -33,6 +33,7 @@ export namespace Data {
 
     interface Country {
         name: string;
+        code: string;
         description?: string;
         cities?: City[];
     }

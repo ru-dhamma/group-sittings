@@ -2,10 +2,11 @@
     import {faChevronLeft, faMapMarkerAlt, faUserCheck} from '@fortawesome/free-solid-svg-icons';
     import Fa from 'svelte-fa/src/fa.svelte';
     import Link from './lib/Link.svelte';
-    import {city, isIndex} from './stores.js';
+    import {city, country, isIndex} from './stores.js';
 
     // empty city and back to index
     const back = () => {
+        country.update(() => undefined);
         city.update(() => undefined);
         isIndex.update(() => true);
     };

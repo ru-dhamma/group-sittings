@@ -1,11 +1,13 @@
 <script>
     import {faStar} from '@fortawesome/free-solid-svg-icons';
     import Fa from 'svelte-fa/src/fa.svelte';
-    import {city, isIndex} from '../stores';
+    import {city, country as countryStore, isIndex} from '../stores';
 
+    /** @type {import('../../types').Data.Country} */
     export let country;
 
     function openCity(currentCity) {
+        countryStore.update(() => country.code);
         city.update(() => currentCity);
         isIndex.update(() => false);
     }
