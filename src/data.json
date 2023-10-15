@@ -1,545 +1,545 @@
 {
-  "countries": [
-    {
-      "name": "Россия",
-      "description": "",
-      "cities": [
+    "countries": [
         {
-          "name": "Владивосток",
-          "slug": "vladivostok",
-          "text": "Информация о групповых медитациях в группе ВК",
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/club119599587",
-              "icon": "vk"
-            }
-          ]
-        },
-        {
-          "name": "Екатеринбург",
-          "slug": "ekaterinburg",
-          "text": "Информация о групповых медитациях в группе ВК",
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/vipassana_ural",
-              "icon": "vk"
-            }
-          ]
-        },
-        {
-          "name": "Ижевск",
-          "slug": "ijevsk",
-          "text": "Регулярные медитации и однодневные ретриты.",
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/izhvipassana",
-              "icon": "vk"
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Ярослав",
-              "phone": "+79127683555",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Казань",
-          "slug": "kazan",
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/club126859418",
-              "icon": "vk"
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Вячеслав",
-              "phone": "+79035676109",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            },
-            {
-              "name": "Александр",
-              "phone": "+79033135221",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            },
-            {
-              "name": "Антонина",
-              "phone": "+79172791446",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            },
-            {
-              "name": "Аида",
-              "phone": "+79196801010",
-              "description": "Финансовые вопросы",
-              "messengers": [
-                "wa"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Калининград",
-          "slug": "kaliningrad",
-          "text": "Групповые медитации по <b>четвергам в 19:15</b>",
-          "addresses": [
-            {
-              "text": "СНТ Победа, ул. Автомобильная 54В",
-              "map": [
-                54.763249,
-                20.506355
-              ]
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Александр",
-              "phone": "+79062315095",
-              "organizer": "true",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Краснодар",
-          "slug": "krasnodar",
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/vipassana_krd",
-              "icon": "vk"
-            }
-          ],
-          "addresses": [
-            {
-              "text": "ул. Горького, 104",
-              "map": [
-                45.031127,
-                38.973838
-              ]
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Антон",
-              "email": "antixmedik@gmail.com",
-              "phone": "+79618564565",
-              "messengers": [
-                "wa"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Москва",
-          "slug": "moscow",
-          "text": "Групповые медитации по <b>четвергам в 20:00</b>",
-          "mark": true,
-          "addresses": [
-            {
-              "text": "м.Тверская, ул. Петровка 26 стр.2, 9 подъезд Клуб \"Абрау-Йога\".",
-              "map": [
-                55.765766,
-                37.617997
-              ]
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Татьяна",
-              "phone": "+79250297389",
-              "organizer": "true",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Набережные Челны",
-          "slug": "naberezhnye-chelny",
-          "text": "<p>Однодневные курсы проводятся <b>один раз в месяц в третье воскресенье месяца</b></p><p>Групповые часовые медитации <b>каждое воскресенье кроме третьего</b></p><p>Информация о групповых медитациях в группе ВК</p>",
-          "mark": false,
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/club152619430",
-              "icon": "vk"
-            }
-          ],
-          "addresses": [
-            {
-              "text": "Цветочный бульвар 23/11Г",
-              "map": [
-                55.762381,
-                52.432039
-              ]
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Алексей",
-              "email": "teplosenter@mail.ru",
-              "phone": "+79090549359",
-              "links": [
+            "name": "Россия",
+            "description": "",
+            "cities": [
                 {
-                  "text": "ВК",
-                  "url": "https://vk.com/id134071500",
-                  "icon": "vk"
-                }
-              ],
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            },
-            {
-              "name": "Анатолий",
-              "phone": "+79397327185",
-              "links": [
+                    "name": "Владивосток",
+                    "slug": "vladivostok",
+                    "text": "Информация о групповых медитациях в группе ВК",
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/club119599587",
+                            "icon": "vk"
+                        }
+                    ]
+                },
                 {
-                  "text": "ВК",
-                  "url": "https://vk.com/id392945792",
-                  "icon": "vk"
-                }
-              ],
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Новосибирск",
-          "slug": "novosibirsk",
-          "text": "Информация о групповых медитациях в группе ВК",
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/vipassana",
-              "icon": "vk"
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Павел",
-              "email": "pavel-aira@yandex.ru",
-              "phone": "+79537912802",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Орёл",
-          "slug": "orel",
-          "text": "Часовые медитации еженедельно по понедельникам и средам 21.00-22.00",
-          "mark": false,
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/club152257921",
-              "icon": "vk"
-            }
-          ],
-          "addresses": [
-            {
-              "text": "ул. 60-летия Октября д.15",
-              "map": [
-                52.980271,
-                36.071256
-              ]
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Надежда Павлюшина",
-              "phone": "+79004844224",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Пермь",
-          "slug": "perm",
-          "text": "<p>Групповые медитации (1 медитация Анапана + 2 медитации Випассана по часу + Метта) проходят <b>по воскресеньям</b>, сбор студентов <b>в 7:25</b></p>",
-          "mark": false,
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/ru.dhamma_perm",
-              "icon": "vk"
-            }
-          ],
-          "addresses": [
-            {
-              "text": "ул. Николая Островского, 29, фитнес-центр Greenline",
-              "map": [
-                58.0120624,
-                56.2590068
-              ]
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Никита",
-              "phone": "+79194809913",
-              "messengers": [
-                "tg"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Самара",
-          "slug": "samara",
-          "text": "<p>Совместные групповые медитации:<br/>\nсуббота с 10:00<br/>\nвоскресенье: с 8:00</p>",
-          "mark": false,
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/vipassana_samara",
-              "icon": "vk"
-            }
-          ],
-          "addresses": [
-            {
-              "text": "ул. Ленинградская, д. 77, комната 214 (второй этаж)",
-              "map": [
-                53.184648,
-                50.10173
-              ]
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Михаил",
-              "phone": "+79053008411",
-              "links": [
+                    "name": "Екатеринбург",
+                    "slug": "ekaterinburg",
+                    "text": "Информация о групповых медитациях в группе ВК",
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/vipassana_ural",
+                            "icon": "vk"
+                        }
+                    ]
+                },
                 {
-                  "text": "ВК",
-                  "url": "https://vk.com/id4508925",
-                  "icon": "vk"
+                    "name": "Ижевск",
+                    "slug": "ijevsk",
+                    "text": "Регулярные медитации и однодневные ретриты.",
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/izhvipassana",
+                            "icon": "vk"
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Ярослав",
+                            "phone": "+79127683555",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Казань",
+                    "slug": "kazan",
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/club126859418",
+                            "icon": "vk"
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Вячеслав",
+                            "phone": "+79035676109",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        },
+                        {
+                            "name": "Александр",
+                            "phone": "+79033135221",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        },
+                        {
+                            "name": "Антонина",
+                            "phone": "+79172791446",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        },
+                        {
+                            "name": "Аида",
+                            "phone": "+79196801010",
+                            "description": "Финансовые вопросы",
+                            "messengers": [
+                                "wa"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Калининград",
+                    "slug": "kaliningrad",
+                    "text": "Групповые медитации по <b>четвергам в 19:15</b>",
+                    "addresses": [
+                        {
+                            "text": "СНТ Победа, ул. Автомобильная 54В",
+                            "map": [
+                                54.763249,
+                                20.506355
+                            ]
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Александр",
+                            "phone": "+79062315095",
+                            "organizer": "true",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Краснодар",
+                    "slug": "krasnodar",
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/vipassana_krd",
+                            "icon": "vk"
+                        }
+                    ],
+                    "addresses": [
+                        {
+                            "text": "ул. Горького, 104",
+                            "map": [
+                                45.031127,
+                                38.973838
+                            ]
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Антон",
+                            "email": "antixmedik@gmail.com",
+                            "phone": "+79618564565",
+                            "messengers": [
+                                "wa"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Москва",
+                    "slug": "moscow",
+                    "text": "Групповые медитации по <b>четвергам в 20:00</b>",
+                    "mark": true,
+                    "addresses": [
+                        {
+                            "text": "м.Тверская, ул. Петровка 26 стр.2, 9 подъезд Клуб \"Абрау-Йога\".",
+                            "map": [
+                                55.765766,
+                                37.617997
+                            ]
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Татьяна",
+                            "phone": "+79250297389",
+                            "organizer": "true",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Набережные Челны",
+                    "slug": "naberezhnye-chelny",
+                    "text": "<p>Однодневные курсы проводятся <b>один раз в месяц в третье воскресенье месяца</b></p><p>Групповые часовые медитации <b>каждое воскресенье кроме третьего</b></p><p>Информация о групповых медитациях в группе ВК</p>",
+                    "mark": false,
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/club152619430",
+                            "icon": "vk"
+                        }
+                    ],
+                    "addresses": [
+                        {
+                            "text": "Цветочный бульвар 23/11Г",
+                            "map": [
+                                55.762381,
+                                52.432039
+                            ]
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Алексей",
+                            "email": "teplosenter@mail.ru",
+                            "phone": "+79090549359",
+                            "links": [
+                                {
+                                    "text": "ВК",
+                                    "url": "https://vk.com/id134071500",
+                                    "icon": "vk"
+                                }
+                            ],
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        },
+                        {
+                            "name": "Анатолий",
+                            "phone": "+79397327185",
+                            "links": [
+                                {
+                                    "text": "ВК",
+                                    "url": "https://vk.com/id392945792",
+                                    "icon": "vk"
+                                }
+                            ],
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Новосибирск",
+                    "slug": "novosibirsk",
+                    "text": "Информация о групповых медитациях в группе ВК",
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/vipassana",
+                            "icon": "vk"
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Павел",
+                            "email": "pavel-aira@yandex.ru",
+                            "phone": "+79537912802",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Орёл",
+                    "slug": "orel",
+                    "text": "Часовые медитации еженедельно по понедельникам и средам 21.00-22.00",
+                    "mark": false,
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/club152257921",
+                            "icon": "vk"
+                        }
+                    ],
+                    "addresses": [
+                        {
+                            "text": "ул. 60-летия Октября д.15",
+                            "map": [
+                                52.980271,
+                                36.071256
+                            ]
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Надежда Павлюшина",
+                            "phone": "+79004844224",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Пермь",
+                    "slug": "perm",
+                    "text": "<p>Групповые медитации (1 медитация Анапана + 2 медитации Випассана по часу + Метта) проходят <b>по воскресеньям</b>, сбор студентов <b>в 7:25</b></p>",
+                    "mark": false,
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/ru.dhamma_perm",
+                            "icon": "vk"
+                        }
+                    ],
+                    "addresses": [
+                        {
+                            "text": "ул. Николая Островского, 29, фитнес-центр Greenline",
+                            "map": [
+                                58.0120624,
+                                56.2590068
+                            ]
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Никита",
+                            "phone": "+79194809913",
+                            "messengers": [
+                                "tg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Самара",
+                    "slug": "samara",
+                    "text": "<p>Совместные групповые медитации:<br/>\nсуббота с 10:00<br/>\nвоскресенье: с 8:00</p>",
+                    "mark": false,
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/vipassana_samara",
+                            "icon": "vk"
+                        }
+                    ],
+                    "addresses": [
+                        {
+                            "text": "ул. Ленинградская, д. 77, комната 214 (второй этаж)",
+                            "map": [
+                                53.184648,
+                                50.10173
+                            ]
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Михаил",
+                            "phone": "+79053008411",
+                            "links": [
+                                {
+                                    "text": "ВК",
+                                    "url": "https://vk.com/id4508925",
+                                    "icon": "vk"
+                                }
+                            ],
+                            "messengers": [
+                                "wa"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Санкт-Питербург",
+                    "slug": "sanct-peterburg",
+                    "text": "Информация о групповых медитациях в группе ВК",
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/weekvip",
+                            "icon": "vk"
+                        }
+                    ]
+                },
+                {
+                    "name": "Сочи",
+                    "slug": "sotchi",
+                    "text": "<p>Часовые медитации еженедельно по <b>понедельникам в 11:00</b></p>",
+                    "mark": false,
+                    "addresses": [
+                        {
+                            "text": "ул.Виноградная 2б (Balance club)",
+                            "map": [
+                                43.597462,
+                                39.717021
+                            ]
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Владислав",
+                            "phone": "+79999939016",
+                            "messengers": [
+                                "wa",
+                                "tg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Тюмень",
+                    "slug": "tyumen",
+                    "text": "<p>Еженедельно медитации проходят по <b>средам с 19:00 до 20.00</b></p>",
+                    "mark": false,
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "https://vk.com/vipassana72",
+                            "icon": "vk"
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Марина",
+                            "phone": "+79044628969",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        },
+                        {
+                            "name": "Нелли",
+                            "phone": "+79129268733",
+                            "messengers": [
+                                "wa"
+                            ]
+                        },
+                        {
+                            "name": "Люция",
+                            "phone": "+79088761118",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        },
+                        {
+                            "name": "Влад",
+                            "phone": "+79068277217",
+                            "messengers": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Хабаровск",
+                    "slug": "khabarovsk",
+                    "text": "Групповые медитации <b>по воскресеньям в 8:00</b>",
+                    "mark": false,
+                    "addresses": [
+                        {
+                            "text": "ул. Владивостокская 32А, Центр развития \"Полина\"",
+                            "map": [
+                                48.492788,
+                                135.077907
+                            ]
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Павел",
+                            "phone": "+79242286777",
+                            "messengers": [
+                                "wa",
+                                "tg"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Чебоксары",
+                    "slug": "cheboksary",
+                    "text": "<p>Еженедельно по <b>воскресениям</b>, в <b>8 утра</b></p>",
+                    "mark": false,
+                    "links": [
+                        {
+                            "text": "Группа ВК",
+                            "url": "http://vk.com",
+                            "icon": "vk"
+                        }
+                    ],
+                    "addresses": [
+                        {
+                            "text": "пр. М.Горького, д. 5, корп. 2, чайный клуб \"Заварка\"",
+                            "map": [
+                                56.039726,
+                                47.304468
+                            ]
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Василий",
+                            "email": "ulun@list.ru",
+                            "phone": "+79170675324",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        },
+                        {
+                            "name": "Ольга",
+                            "phone": "+79176616524",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        }
+                    ]
                 }
-              ],
-              "messengers": [
-                "wa"
-              ]
-            }
-          ]
+            ]
         },
         {
-          "name": "Санкт-Питербург",
-          "slug": "sanct-peterburg",
-          "text": "Информация о групповых медитациях в группе ВК",
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/weekvip",
-              "icon": "vk"
-            }
-          ]
+            "name": "Украина",
+            "description": "<p>Актуальную информацию о групповых медитациях в городах Украины вы можете найти в <a href=\"https://ua.dhamma.org/ru/dlja-starykh-studentov/gruppovye-meditacii/\" target=\"_blank\">соответствующем разделе</a> сайта медитации випассана в Украине.</p>"
         },
         {
-          "name": "Сочи",
-          "slug": "sotchi",
-          "text": "<p>Часовые медитации еженедельно по <b>понедельникам в 11:00</b></p>",
-          "mark": false,
-          "addresses": [
-            {
-              "text": "ул.Виноградная 2б (Balance club)",
-              "map": [
-                43.597462,
-                39.717021
-              ]
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Владислав",
-              "phone": "+79999939016",
-              "messengers": [
-                "wa",
-                "tg"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Тюмень",
-          "slug": "tyumen",
-          "text": "<p>Еженедельно медитации проходят по <b>средам с 19:00 до 20.00</b></p>",
-          "mark": false,
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "https://vk.com/vipassana72",
-              "icon": "vk"
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Марина",
-              "phone": "+79044628969",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            },
-            {
-              "name": "Нелли",
-              "phone": "+79129268733",
-              "messengers": [
-                "wa"
-              ]
-            },
-            {
-              "name": "Люция",
-              "phone": "+79088761118",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            },
-            {
-              "name": "Влад",
-              "phone": "+79068277217",
-              "messengers": []
-            }
-          ]
-        },
-        {
-          "name": "Хабаровск",
-          "slug": "khabarovsk",
-          "text": "Групповые медитации <b>по воскресеньям в 8:00</b>",
-          "mark": false,
-          "addresses": [
-            {
-              "text": "ул. Владивостокская 32А, Центр развития \"Полина\"",
-              "map": [
-                48.492788,
-                135.077907
-              ]
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Павел",
-              "phone": "+79242286777",
-              "messengers": [
-                "wa",
-                "tg"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Чебоксары",
-          "slug": "cheboksary",
-          "text": "<p>Еженедельно по <b>воскресениям</b>, в <b>8 утра</b></p>",
-          "mark": false,
-          "links": [
-            {
-              "text": "Группа ВК",
-              "url": "http://vk.com",
-              "icon": "vk"
-            }
-          ],
-          "addresses": [
-            {
-              "text": "пр. М.Горького, д. 5, корп. 2, чайный клуб \"Заварка\"",
-              "map": [
-                56.039726,
-                47.304468
-              ]
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Василий",
-              "email": "ulun@list.ru",
-              "phone": "+79170675324",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            },
-            {
-              "name": "Ольга",
-              "phone": "+79176616524",
-              "messengers": [
-                "tg",
-                "wa"
-              ]
-            }
-          ]
+            "name": "Беларусь",
+            "description": "",
+            "cities": [
+                {
+                    "name": "Минск",
+                    "slug": "minsk",
+                    "text": "<p>Еженедельно по <b>средам, с 20:30 до 21:30</b>.\n</p><p>Однодневные курсы <b>ежемесячно</b>, первое воскресенье месяца.<br></p>",
+                    "mark": true,
+                    "addresses": [
+                        {
+                            "text": "ст.м. Площадь Победы"
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Андрей",
+                            "phone": "+375296409633",
+                            "messengers": [
+                                "wa"
+                            ]
+                        },
+                        {
+                            "name": "Диана",
+                            "email": "vipassana.minsk@gmail.com",
+                            "phone": "+375296404633",
+                            "messengers": [
+                                "wa"
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "Украина",
-      "description": "<p>Актуальную информацию о групповых медитациях в городах Украины вы можете найти в <a href=\"https://ua.dhamma.org/ru/dlja-starykh-studentov/gruppovye-meditacii/\" target=\"_blank\">соответствующем разделе</a> сайта медитации випассана в Украине.</p>"
-    },
-    {
-      "name": "Беларусь",
-      "description": "",
-      "cities": [
-        {
-          "name": "Минск",
-          "slug": "minsk",
-          "text": "<p>Еженедельно по <b>средам, с 20:30 до 21:30</b>.\n</p><p>Однодневные курсы <b>ежемесячно</b>, первое воскресенье месяца.<br></p>",
-          "mark": true,
-          "addresses": [
-            {
-              "text": "ст.м. Площадь Победы"
-            }
-          ],
-          "contacts": [
-            {
-              "name": "Андрей",
-              "phone": "+375296409633",
-              "messengers": [
-                "wa"
-              ]
-            },
-            {
-              "name": "Диана",
-              "email": "vipassana.minsk@gmail.com",
-              "phone": "+375296404633",
-              "messengers": [
-                "wa"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+    ]
 }
