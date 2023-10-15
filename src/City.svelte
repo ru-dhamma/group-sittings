@@ -9,14 +9,14 @@
     faUserCheck,
   } from '@fortawesome/free-solid-svg-icons';
 
-  // emtpy city and back to index
+  // empty city and back to index
   let back = () => {
     cityStore.update(()=>Object())
     isIndex.update(() => true);
   }
 
   //city from store
-  let city; 
+  let city;
   const unsubscribe = cityStore.subscribe(value => city = value);
   onDestroy(unsubscribe);
 

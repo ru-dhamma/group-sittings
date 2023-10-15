@@ -1,6 +1,5 @@
 
 <script>
-	
 	import data from './data.json';
 	import {
 		Accordion,
@@ -17,12 +16,12 @@
 	let countries = data.countries;
 	let searchTerm = "";
 	let expanded = Array(countries.length).fill(true, 0, 1).fill(false, 1);
-	let isSearching = false;
-	let found = [];
-	
+	let isSearching;
+	let found;
+
 	$: {
-		found = searchTerm != "" ? findCities(countries, searchTerm) : countries;
-		isSearching = searchTerm != "" ? true : false;
+		found = searchTerm !== "" ? findCities(countries, searchTerm) : countries;
+		isSearching = !!searchTerm.length;
 	}
 
 	function findCities(countries, searchTerm) {
@@ -46,7 +45,6 @@
 
 
 <section>
-
 	<div class="search-wrap relative">
 		<div class="absolute inset-y-0 left-0 pl-3  flex items-center  pointer-events-none">
 			<Fa icon={faSearchLocation} class="text-gray-300 text-2xl" />
@@ -91,7 +89,7 @@
 	}
 	:global([data-accordion-item] [role="region"][hidden]) {
 		display: block;
-		max-height: 0px;
+		max-height: 0;
   	opacity: 0;
 	}
 	:global([data-accordion-item] .fa) {

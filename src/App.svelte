@@ -20,8 +20,6 @@
 	onDestroy(unsubscribeIndex);
 </script>
 
-
-
 <div class="max-w">
 	<PageTransition refresh={key}>
 		<main id="main-container" class="max-w-full p-5 sm:p-0">
@@ -33,7 +31,7 @@
 				{:else}
 					<City />
 				{/if}
-			
+
 			</main>
 		</PageTransition>
 </div>
@@ -66,8 +64,8 @@
   }
 
 	#main-container {
-		height: 620px; 
-		max-height: 620px; 
+		height: 620px;
+		max-height: 620px;
 		overflow-y: hidden;
 	}
 </style>

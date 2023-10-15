@@ -1,5 +1,5 @@
 <script>
-  import { city, isIndex } from './../stores.js';
+  import { city, isIndex } from '../stores';
   import Fa from 'svelte-fa/src/fa.svelte';
   import {
     faStar
