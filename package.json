@@ -7,32 +7,35 @@
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear"
   },
+  "engines": {
+    "node": ">= 18.0"
+  },
   "devDependencies": {
-    "@fontsource/fira-mono": "^4.5.0",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-node-resolve": "^11.0.0",
-    "autoprefixer": "^10.3.7",
-    "concurrently": "^6.3.0",
+    "@fontsource/fira-mono": "^5.0.8",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@rollup/plugin-commonjs": "^25.0.5",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.1",
     "cross-env": "^7.0.3",
-    "postcss": "^8.3.9",
-    "postcss-cli": "^9.0.1",
-    "rollup": "^2.3.4",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.1.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "svelte": "^3.43.1",
-    "svelte-accessible-accordion": "^2.0.0",
-    "svelte-fa": "^2.3.3",
-    "svelte-preprocess": "^4.9.8",
-    "svelte-search": "^1.1.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "rollup": "^4.1.1",
+    "rollup-plugin-css-only": "^4.3.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-svelte": "^7.1.6",
+    "svelte": "^4.2.1",
+    "svelte-accessible-accordion": "^2.1.0",
+    "svelte-fa": "^3.0.4",
+    "svelte-preprocess": "^5.0.4",
+    "svelte-search": "^2.0.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   },
   "dependencies": {
-    "@lukeed/uuid": "^2.0.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "sirv-cli": "^1.0.0"
+    "@lukeed/uuid": "^2.0.1",
+    "@rollup/plugin-json": "^6.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "sirv-cli": "^2.0.2"
   }
 }

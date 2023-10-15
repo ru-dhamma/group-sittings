@@ -1,11 +1,14 @@
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import resolve from '@rollup/plugin-node-resolve';
+import terser from '@rollup/plugin-terser';
+import autoprefixer from 'autoprefixer';
+import {spawn} from 'node:child_process';
 import css from 'rollup-plugin-css-only';
 import livereload from 'rollup-plugin-livereload';
 import svelte from 'rollup-plugin-svelte';
-import {terser} from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
+import tailwindcss from 'tailwindcss';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -23,7 +26,7 @@ function serve() {
             if (server) {
                 return;
             }
-            server = require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
+            server = spawn('npm', ['run', 'start', '--', '--dev'], {
                 stdio: ['ignore', 'inherit', 'inherit'],
                 shell: true,
             });
@@ -53,8 +56,8 @@ export default {
                 sourceMap: !production,
                 postcss: {
                     plugins: [
-                        require('tailwindcss'),
-                        require('autoprefixer'),
+                        tailwindcss,
+                        autoprefixer,
                     ],
                 },
             }),
@@ -87,6 +90,6 @@ export default {
         production && terser(),
     ],
     watch: {
-        clearScreen: false
-    }
+        clearScreen: false,
+    },
 };
