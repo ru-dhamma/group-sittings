@@ -1,15 +1,14 @@
 <script>
-  import {faStar} from '@fortawesome/free-solid-svg-icons';
-  import Fa from 'svelte-fa/src/fa.svelte';
-  import {city, isIndex} from '../stores';
+    import {faStar} from '@fortawesome/free-solid-svg-icons';
+    import Fa from 'svelte-fa/src/fa.svelte';
+    import {city, isIndex} from '../stores';
 
-  export let country;
+    export let country;
 
     function openCity(currentCity) {
         city.update(() => currentCity);
         isIndex.update(() => false);
     }
-
 </script>
 
 {#if country.description}

@@ -1,12 +1,12 @@
 <script>
-	import {faPlusCircle, faSearchLocation} from '@fortawesome/free-solid-svg-icons';
-	import {Accordion, AccordionItem} from 'svelte-accessible-accordion';
-	import Fa from 'svelte-fa/src/fa.svelte';
-	import Search from 'svelte-search';
-	import data from './data.json';
-	import Country from './lib/Country.svelte';
+    import {faPlusCircle, faSearchLocation} from '@fortawesome/free-solid-svg-icons';
+    import {Accordion, AccordionItem} from 'svelte-accessible-accordion';
+    import Fa from 'svelte-fa/src/fa.svelte';
+    import Search from 'svelte-search';
+    import data from './data.json';
+    import Country from './lib/Country.svelte';
 
-	let countries = data.countries;
+    const countries = data.countries;
     let searchTerm = '';
     let expanded = Array(countries.length).fill(true, 0, 1).fill(false, 1);
     let isSearching;
@@ -19,15 +19,12 @@
 
     function findCities(countries, searchTerm) {
         return countries.reduce(function (res, country) {
-            if (typeof country.cities != 'undefined' && country.cities.some(({
-                                                                                 name,
-                                                                             }) => name.toLowerCase().includes(searchTerm.toLowerCase()))) {
-                let filtered = {
+            if (typeof country.cities != 'undefined'
+                && country.cities.some(({name}) => name.toLowerCase().includes(searchTerm.toLowerCase()))) {
+                const filtered = {
                     name: country.name,
                     description: country.description,
-                    cities: country.cities.filter(({
-                                                       name,
-                                                   }) => name.toLowerCase().includes(searchTerm.toLowerCase())),
+                    cities: country.cities.filter(({name}) => name.toLowerCase().includes(searchTerm.toLowerCase())),
                 };
                 res.push(filtered);
             }
@@ -39,11 +36,16 @@
 
 <section>
     <div class="search-wrap relative">
-        <div class="absolute inset-y-0 left-0 pl-3  flex items-center  pointer-events-none">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <Fa class="text-gray-300 text-2xl" icon={faSearchLocation}/>
         </div>
-        <Search bind:value={searchTerm} class="appearance-none border rounded-full w-full py-3 pl-12 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow" hideLabel="false" label=""
-                placeholder="Поиск по городам"/>
+        <Search
+                bind:value={searchTerm}
+                class="appearance-none border rounded-full w-full py-3 pl-12 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow"
+                hideLabel="false"
+                label=""
+                placeholder="Поиск по городам"
+        />
     </div>
 
     {#if isSearching}

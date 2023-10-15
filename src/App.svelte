@@ -1,11 +1,11 @@
 <script>
-	import {onDestroy} from 'svelte';
-	import City from './City.svelte';
-	import Index from './Index.svelte';
-	import PageTransition from './lib/PageTransition.svelte';
-	import {city, isIndex} from './stores.js';
+    import {onDestroy} from 'svelte';
+    import City from './City.svelte';
+    import Index from './Index.svelte';
+    import PageTransition from './lib/PageTransition.svelte';
+    import {city, isIndex} from './stores.js';
 
-	let key;
+    let key;
     let isIndexValue;
 
     const unsubscribeCity = city.subscribe(value => key = typeof value.name != 'undefined' ? value.name : 'index');
@@ -26,7 +26,6 @@
             {:else}
                 <City/>
             {/if}
-
         </main>
     </PageTransition>
 </div>

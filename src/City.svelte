@@ -1,12 +1,12 @@
 <script>
-  import {faChevronLeft, faMapMarkerAlt, faUserCheck} from '@fortawesome/free-solid-svg-icons';
-  import {onDestroy} from 'svelte';
-  import Fa from 'svelte-fa/src/fa.svelte';
-  import Link from './lib/Link.svelte';
-  import {city as cityStore, isIndex} from './stores.js';
+    import {faChevronLeft, faMapMarkerAlt, faUserCheck} from '@fortawesome/free-solid-svg-icons';
+    import {onDestroy} from 'svelte';
+    import Fa from 'svelte-fa/src/fa.svelte';
+    import Link from './lib/Link.svelte';
+    import {city as cityStore, isIndex} from './stores.js';
 
-  // empty city and back to index
-    let back = () => {
+    // empty city and back to index
+    const back = () => {
         cityStore.update(() => Object());
         isIndex.update(() => true);
     };
@@ -16,7 +16,7 @@
     const unsubscribe = cityStore.subscribe(value => city = value);
     onDestroy(unsubscribe);
 
-    let formatPhoneNumber = (str) => {
+    const formatPhoneNumber = (str) => {
         // Filter only numbers from the input
         let cleaned = ('' + str).replace(/\D/g, '');
         // Check if the input is of correct
@@ -43,8 +43,13 @@
 
 <header class="mb-7">
     <!-- svelte-ignore a11y-invalid-attribute -->
-    <a class="button text-black hover:no-underline bg-gray-100 p-2.5 pr-3.5 rounded-full hover:bg-gray-300 inline-block mb-4 md:absolute" href="#" on:click="{back}"><span class="rounded-full inline-block bg-yellow-400 w-6 h-6 pl-1.5 pt-0.25 mr-1"><Fa class="inline" icon={faChevronLeft}/></span>
-        Назад</a>
+    <a class="button text-black hover:no-underline bg-gray-100 p-2.5 pr-3.5 rounded-full hover:bg-gray-300 inline-block mb-4 md:absolute"
+       href="#"
+       on:click="{back}"
+    >
+        <span class="rounded-full inline-block bg-yellow-400 w-6 h-6 pl-1.5 pt-0.25 mr-1"><Fa class="inline" icon={faChevronLeft}/></span>
+        Назад
+    </a>
     {#if city.name}<h1 id="city-title" class="text-center">{city.name}</h1>{/if}
 </header>
 {#if city.text}<p id="city-text" class="mb-3">{@html city.text}</p>{/if}

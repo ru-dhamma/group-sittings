@@ -1,24 +1,24 @@
 <script>
-  import {faFacebook, faFacebookMessenger, faInstagram, faSnapchat, faTelegram, faVk, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
-  import {faChevronRight, faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
-  import Fa from 'svelte-fa/src/fa.svelte';
+    import {faFacebook, faFacebookMessenger, faInstagram, faSnapchat, faTelegram, faVk, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
+    import {faChevronRight, faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons';
+    import Fa from 'svelte-fa/src/fa.svelte';
 
-  export let type;
+    export let type;
     export let url;
     export let messengers = [];
-    let preIcon = {
+    const preIcon = {
         email: faEnvelope,
         tel: faPhone,
         vk: faVk,
         fb: faFacebook,
         in: faInstagram,
     }[type] ?? '';
-    let prefix = {
+    const prefix = {
         email: 'mailto:',
         tel: 'tel:',
         map: 'https://maps.apple.com/?q=',
     }[type] ?? '';
-    let messengersIcons = messengers.map(
+    const messengersIcons = messengers.map(
         (m) => {
             switch (m) {
                 case 'tg':
