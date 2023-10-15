@@ -6,6 +6,7 @@
     import data from './data.json';
     import Country from './lib/Country.svelte';
 
+    /** @type {import('../types').Data.Countries} */
     const countries = data.countries;
     let searchTerm = '';
     let expanded = Array(countries.length).fill(true, 0, 1).fill(false, 1);

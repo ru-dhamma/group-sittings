@@ -8,7 +8,7 @@
     let key;
     let isIndexValue;
 
-    const unsubscribeCity = city.subscribe(value => key = typeof value.name != 'undefined' ? value.name : 'index');
+    const unsubscribeCity = city.subscribe(value => key = typeof value != 'undefined' ? value.name : 'index');
     const unsubscribeIndex = isIndex.subscribe(value => isIndexValue = value);
 
     onDestroy(unsubscribeCity);
