@@ -5,7 +5,7 @@
     import {city, isIndex} from './stores.js';
 </script>
 
-<div class="max-w">
+<div class="group-sittings-app">
     <PageTransition refresh={$city}>
         <main class="max-w-full p-5 sm:p-0" id="main-container">
             <h2 class="mb-5">
@@ -47,13 +47,7 @@
         }
     }
 
-    body {
-        overflow: hidden;
-    }
-
-    #main-container {
-        height: 620px;
-        max-height: 620px;
-        overflow-y: hidden;
+    .group-sittings-app {
+        overflow-x: hidden;
     }
 </style>
