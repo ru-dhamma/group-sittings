@@ -8,16 +8,20 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
 
-    - name: Use Node.js 16
+    - name: Use Node.js 18
       uses: actions/setup-node@v2-beta
       with:
-        node-version: '16'
-      
+        node-version: '18'
+
+    - name: Install Yarn
+      uses: DerYeger/yarn-setup-action@master
+      with:
+        node-version: 18
+
     - name: 🔨 Build Project
       run: |
-        npm install
-        npm run build
-    
+        yarn build
+
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
