@@ -67,7 +67,8 @@
         z-index: 10;
         padding: 10px;
         background-color: rgba(255, 255, 255, 0.9);
-        font-size: 14px;
+        font-size: 12px;
+        line-height: 1.25;
         text-align: right;
     }
 </style>
