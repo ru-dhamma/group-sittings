@@ -18,6 +18,11 @@
             {/if}
         </main>
     </PageTransition>
+    <div class="contact">
+        Заметили ошибку?<br>
+        Хотите проводить групповые медитации в своём городе?<br>
+        Свяжитесь с нами: <a href="mailto:info@vipassana.ru" target="_top">info@vipassana.ru</a>
+    </div>
 </div>
 
 <style global lang="postcss">
@@ -53,5 +58,16 @@
 
     .group-sittings-app {
         overflow-x: hidden;
+    }
+
+    .contact {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.9);
+        font-size: 14px;
+        text-align: right;
     }
 </style>
