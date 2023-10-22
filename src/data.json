@@ -512,6 +512,48 @@
             "code": "KZ",
             "description": "",
             "cities": [
+                {
+                    "name": "Астана",
+                    "slug": "astana",
+                    "text": "Еженедельно по <b>воскресеньям в 7:30 утра</b>",
+                    "mark": false,
+                    "addresses": [
+                        {
+                            "text": "просп. Мангилик Ел, 27, студия йоги Sundar Yoga",
+                            "map": "https://yandex.ru/maps/-/CDaKUAjH"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "text": "Группа в Telegram",
+                            "url": "https://t.me/vipassanavastane",
+                            "icon": "tg"
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Андрей",
+                            "phone": "+77015390471",
+                            "messengers": [
+                                "tg"
+                            ]
+                        },
+                        {
+                            "name": "Сания",
+                            "phone": "+77759290849",
+                            "messengers": [
+                                "tg"
+                            ]
+                        },
+                        {
+                            "name": "Болат",
+                            "phone": "+77071880606",
+                            "messengers": [
+                                "tg"
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     ]
