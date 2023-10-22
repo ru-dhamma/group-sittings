@@ -57,7 +57,7 @@
     }
 
     .group-sittings-app {
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
     .contact {
