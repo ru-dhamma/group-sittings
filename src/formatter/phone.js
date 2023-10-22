@@ -4,6 +4,7 @@ const formats = {
     RU: '+7 NNN NNN-NN-NN',
     BY: '+375 NN NNN-NN-NN',
     UA: '+380 NN NNN NNNN',
+    KZ: '+7 NNN NNN-NN-NN',
 }
 
 const createFormatter = format => phone => {
