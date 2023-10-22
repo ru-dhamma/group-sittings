@@ -16,7 +16,6 @@
     const prefix = {
         email: 'mailto:',
         tel: 'tel:',
-        map: 'https://maps.apple.com/?q=',
     }[type] ?? '';
     const messengersIcons = messengers.map(
         (m) => {
