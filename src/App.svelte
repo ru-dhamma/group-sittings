@@ -39,12 +39,16 @@
         }
 
         a {
-            color: #955746;
+            color: var(--link-color);
         }
 
         a:hover {
             text-decoration: underline;
         }
+    }
+
+    :root {
+        --link-color: #955746;
     }
 
     .group-sittings-app {
