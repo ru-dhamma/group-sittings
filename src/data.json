@@ -110,7 +110,6 @@
                         {
                             "name": "Александр",
                             "phone": "+79062315095",
-                            "organizer": "true",
                             "messengers": [
                                 "tg",
                                 "wa"
@@ -160,7 +159,6 @@
                         {
                             "name": "Татьяна",
                             "phone": "+79250297389",
-                            "organizer": "true",
                             "messengers": [
                                 "tg",
                                 "wa"
@@ -191,32 +189,20 @@
                             "name": "Алексей",
                             "email": "teplosenter@mail.ru",
                             "phone": "+79090549359",
-                            "links": [
-                                {
-                                    "text": "ВК",
-                                    "url": "https://vk.com/id134071500",
-                                    "icon": "vk"
-                                }
-                            ],
-                            "messengers": [
-                                "tg",
-                                "wa"
-                            ]
+                            "messengers": {
+                                "tg":  null,
+                                "wa": null,
+                                "vk": "id134071500"
+                            }
                         },
                         {
                             "name": "Анатолий",
                             "phone": "+79397327185",
-                            "links": [
-                                {
-                                    "text": "ВК",
-                                    "url": "https://vk.com/id392945792",
-                                    "icon": "vk"
-                                }
-                            ],
-                            "messengers": [
-                                "tg",
-                                "wa"
-                            ]
+                            "messengers": {
+                                "tg": null,
+                                "wa": null,
+                                "vk": "id392945792"
+                            }
                         }
                     ]
                 },
@@ -322,16 +308,10 @@
                         {
                             "name": "Михаил",
                             "phone": "+79053008411",
-                            "links": [
-                                {
-                                    "text": "ВК",
-                                    "url": "https://vk.com/id4508925",
-                                    "icon": "vk"
-                                }
-                            ],
-                            "messengers": [
-                                "wa"
-                            ]
+                            "messengers": {
+                                "wa": null,
+                                "vk": "id4508925"
+                            }
                         }
                     ]
                 },

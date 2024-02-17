@@ -1,7 +1,7 @@
 <script>
     import {faChevronLeft, faMapMarkerAlt, faUserCheck} from '@fortawesome/free-solid-svg-icons';
     import Fa from 'svelte-fa/src/fa.svelte';
-    import createPhoneFormatter from './formatter/phone';
+    import contactsList from './formatter/contact';
     import Link from './lib/Link.svelte';
     import {city, country, isIndex} from './stores.js';
 
@@ -11,8 +11,6 @@
         city.update(() => undefined);
         isIndex.update(() => true);
     };
-
-    const formatPhone = createPhoneFormatter($country);
 </script>
 
 <svelte:head>
@@ -55,12 +53,10 @@
                     Адрес
                 </div>
                 <div class="col-span-4">
-                    <div class="">{address.text}</div>
-                    {#if address.map}
-                        <div class="">
-                            <Link type="map" url={address.map}>Карта</Link>
-                        </div>
-                    {/if}
+                    <div>
+                        {address.text}
+                        {#if address.map}<span class="inline-block ml-1">(<a href="address.map" target="_top">карта</a>)</span>{/if}
+                    </div>
                     {#if address.description}
                         <div class="">{address.description}</div>
                     {/if}
@@ -83,17 +79,19 @@
                     {#if contact.organizer}<p class="text-sm italic">(организатор)</p>{/if}
                 </div>
                 <div class="col-span-4">
-                    {#if contact.phone}
+                    {#each contactsList($country, contact) as entry}
                         <div class="">
-                            <Link type="tel" url={contact.phone} messengers={contact.messengers}>{formatPhone(contact.phone)}</Link>
+                            <Fa icon={entry.icon} class="inline text-gray-400 mr-1"/>
+                            <a href="{entry.url}" target="_top">{entry.label}</a>
+                            {#each entry.messengers ?? [] as messenger}
+                                <a href="{messenger.url}" target="_top" class="inline-block ml-2" title="{messenger.label}">
+                                    <Fa icon={messenger.icon} class="inline" style="color: var(--link-color)"/>
+                                </a>
+                            {/each}
                             {#if contact.description}<p>{contact.description}</p>{/if}
                         </div>
-                    {/if}
-                    {#if contact.email}
-                        <div class="">
-                            <Link type="email" url={contact.email}>{contact.email}</Link>
-                        </div>
-                    {/if}
+
+                    {/each}
                     {#if contact.links}
                         {#each contact.links as link}
                             <div class="">

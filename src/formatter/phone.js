@@ -7,9 +7,14 @@ const formats = {
     KZ: '+7 NNN NNN-NN-NN',
 }
 
+/**
+ * @param {string|null} format
+ * @return {(phone: string) => string}
+ */
 const createFormatter = format => phone => {
     phone = phone.replace(/[^0-9]+/g, '');
     if (typeof format !== 'string') {
+        phone = phone.startsWith('8') ? `7${phone.substring(1)}` : phone;
         return `+${phone}`;
     }
     const digits = phone.split('').map(v => parseInt(v)).filter(v => v >= 0 && v <= 9);
@@ -29,7 +34,7 @@ const createFormatter = format => phone => {
 }
 
 /**
- * @param {string} country
+ * @param {string} [country]
  * @return {(phone: string) => string}
  */
 export default function createPhoneFormatter(country) {
