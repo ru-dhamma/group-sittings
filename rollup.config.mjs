@@ -40,7 +40,8 @@ function serve() {
 export default {
     input: 'src/main.js',
     output: {
-        sourcemap: true,
+        sourcemap: !production,
+        sourcemapFile: 'bundle.js.map',
         format: 'iife',
         name: 'app',
         file: 'public/build/bundle.js',
