@@ -145,8 +145,8 @@
                     ]
                 },
                 {
-                    "name": "Москва",
-                    "slug": "moscow",
+                    "name": "Москва, м.Тверская",
+                    "slug": "moscow-tverskaya",
                     "text": "Групповые медитации по <b>четвергам в 20:00</b>",
                     "mark": true,
                     "addresses": [
@@ -159,6 +159,28 @@
                         {
                             "name": "Татьяна",
                             "phone": "+79250297389",
+                            "messengers": [
+                                "tg",
+                                "wa"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Москва, м.Китай-город",
+                    "slug": "moscow-kitay-gorod",
+                    "text": "Групповые медитации по <b>вторникам и пятницам в 18:30</b>",
+                    "mark": true,
+                    "addresses": [
+                        {
+                            "text": "м.Китай-город, КЦ Белые облака, ул.Покровка 4с1, 3-й этаж, VIP-зал",
+                            "map": "https://yandex.ru/maps/-/CDBHVJ5x"
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Этибар",
+                            "phone": "+79688601842",
                             "messengers": [
                                 "tg",
                                 "wa"
