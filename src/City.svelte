@@ -55,7 +55,7 @@
                 <div class="col-span-4">
                     <div>
                         {address.text}
-                        {#if address.map}<span class="inline-block ml-1">(<a href="address.map" target="_top">карта</a>)</span>{/if}
+                        {#if address.map}<span class="inline-block ml-1">(<a href="{address.map}" target="_top">карта</a>)</span>{/if}
                     </div>
                     {#if address.description}
                         <div class="">{address.description}</div>
