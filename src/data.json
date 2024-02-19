@@ -466,6 +466,35 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "name": "Ярославль",
+                    "slug": "yaroslavl",
+                    "text": "Еженедельно по <b>субботам</b>, в <b>20:00</b>",
+                    "mark": false,
+                    "addresses": [
+                        {
+                            "text": "ул. Республиканская, 84, 2 этаж. Пространство «Душа и сердце»",
+                            "map": "https://yandex.ru/maps/-/CDBHZI~-"
+                        }
+                    ],
+                    "links": [
+                        {
+                            "text": "Чат в Telegram",
+                            "url": "https://t.me/+eQw7l5-ELgJjMmIy",
+                            "icon": "tg"
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Ольга",
+                            "email": "analgin12@yandex.ru",
+                            "phone": "+79807054253",
+                            "messengers": {
+                                "tg": "@Olga_Anglotabla"
+                            }
+                        }
+                    ]
                 }
             ]
         },
