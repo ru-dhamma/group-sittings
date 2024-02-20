@@ -186,6 +186,13 @@
                                 "wa"
                             ]
                         }
+                    ],
+                    "links": [
+                        {
+                            "text": "Чат в Telegram",
+                            "url": "https://t.me/+NtgSWNhvE51jMmQy",
+                            "icon": "tg"
+                        }
                     ]
                 },
                 {
