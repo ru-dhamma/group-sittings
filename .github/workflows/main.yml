@@ -23,7 +23,7 @@ jobs:
         yarn build
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: code.dhamma-dullabha.org
         username: code
