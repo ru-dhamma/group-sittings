@@ -6,10 +6,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Use Node.js 18
-      uses: actions/setup-node@v2-beta
+      uses: actions/setup-node@v4
       with:
         node-version: '18'
 
@@ -23,7 +23,7 @@ jobs:
         yarn build
 
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      uses: SamKirkland/FTP-Deploy-Action@4
       with:
         server: code.dhamma-dullabha.org
         username: code
