@@ -120,27 +120,12 @@
                 {
                     "name": "Краснодар",
                     "slug": "krasnodar",
+                    "text": "Информация о групповых медитациях в группе в Telegram",
                     "links": [
                         {
-                            "text": "Группа ВК",
-                            "url": "https://vk.com/vipassana_krd",
-                            "icon": "vk"
-                        }
-                    ],
-                    "addresses": [
-                        {
-                            "text": "ул. Горького, 104",
-                            "map": "https://yandex.ru/maps/-/CDaK4UJD"
-                        }
-                    ],
-                    "contacts": [
-                        {
-                            "name": "Антон",
-                            "email": "antixmedik@gmail.com",
-                            "phone": "+79618564565",
-                            "messengers": [
-                                "wa"
-                            ]
+                            "text": "Группа в Telegram",
+                            "url": "https://t.me/+Fe1zSY46sfxiMTRi",
+                            "icon": "tg"
                         }
                     ]
                 },
