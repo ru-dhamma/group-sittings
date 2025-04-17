@@ -52,6 +52,26 @@
                     ]
                 },
                 {
+                    "name": "Иркутск",
+                    "slug": "irkutsk",
+                    "text": "Медитации проходят еженедельно по <b>воскресеньям в 18:00</b>",
+                    "addresses": [
+                        {
+                            "text": "ул. Советская 115/2, Yoga-loft, остановка - Городок ИВАТУ, вход с обратной стороны дома, цокольный этаж",
+                            "map": "https://yandex.ru/maps/-/CHbGZCoF"
+                        }
+                    ],
+                    "contacts": [
+                        {
+                            "name": "Сергей",
+                            "phone": "+79647377794",
+                            "messengers": {
+                                "tg": "Sergei_ratkevich"
+                            }
+                        }
+                    ]
+                },
+                {
                     "name": "Казань",
                     "slug": "kazan",
                     "links": [
