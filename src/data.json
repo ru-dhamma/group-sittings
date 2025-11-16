@@ -561,11 +561,6 @@
             ]
         },
         {
-            "name": "Украина",
-            "code": "UA",
-            "description": "Актуальную информацию о групповых медитациях в городах Украины вы можете найти в <a href=\"https://ua.dhamma.org/ru/dlja-starykh-studentov/gruppovye-meditacii/\" target=\"_blank\">соответствующем разделе</a> сайта медитации випассана в Украине."
-        },
-        {
             "name": "Беларусь",
             "code": "BY",
             "description": "",
@@ -648,6 +643,11 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Украина",
+            "code": "UA",
+            "description": "Актуальную информацию о групповых медитациях в городах Украины вы можете найти в <a href=\"https://ua.dhamma.org/ru/dlja-starykh-studentov/gruppovye-meditacii/\" target=\"_blank\">соответствующем разделе</a> сайта медитации випассана в Украине."
         }
     ]
 }
