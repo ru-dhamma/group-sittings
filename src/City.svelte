@@ -31,9 +31,9 @@
 {#if $city?.text}<p id="city-text" class="mb-3">{@html $city.text}</p>{/if}
 
 {#if $city?.links}
-    <div id="links">
+    <div id="links" class="mb-3">
         {#each $city.links as link}
-            <div class="mb-3">
+            <div>
                 {#if link.text}
                     <Link type={link.icon} url={link.url}>{link.text}</Link>
                 {:else}
